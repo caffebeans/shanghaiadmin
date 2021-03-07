@@ -186,7 +186,7 @@ export const updateFood = data => fetch('/shopping/v2/updatefood', data, 'POST')
 export const deleteFood = food_id => fetch('/shopping/v2/food/' + food_id, {}, 'DELETE');
 
 /**
- * 获取用户列表
+ * 获取服务列表
  */
 
 export const getUserList = data => fetch('/v1/users/list', data);

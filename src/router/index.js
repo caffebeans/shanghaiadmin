@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
-
 const login = r => require.ensure([], () => r(require('@/page/login')), 'login');
 const manage = r => require.ensure([], () => r(require('@/page/manage')), 'manage');
 const home = r => require.ensure([], () => r(require('@/page/home')), 'home');
@@ -37,31 +36,31 @@ const routes = [
 		},{
 			path: '/addShop',
 			component: addShop,
-			meta: ['添加数据', '添加商铺'],
+			meta: ['数据管理', '添加商铺'],
 		},{
 			path: '/addGoods',
 			component: addGoods,
-			meta: ['添加数据', '添加商品'],
+			meta: ['数据管理', '添加商品'],
 		},{
 			path: '/userList',
 			component: userList,
-			meta: ['数据管理', '用户列表'],
+			meta: ['服务总线', '服务列表'],
 		},{
 			path: '/shopList',
 			component: shopList,
-			meta: ['数据管理', '商家列表'],
+			meta: ['服务总线', '商家列表'],
 		},{
 			path: '/foodList',
 			component: foodList,
-			meta: ['数据管理', '食品列表'],
+			meta: ['服务总线', '食品列表'],
 		},{
 			path: '/orderList',
 			component: orderList,
-			meta: ['数据管理', '订单列表'],
+			meta: ['服务总线', '订单列表'],
 		},{
 			path: '/adminList',
 			component: adminList,
-			meta: ['数据管理', '管理员列表'],
+			meta: ['服务总线', '管理员列表'],
 		},{
 			path: '/visitor',
 			component: visitor,
